@@ -1,0 +1,170 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource1.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource1.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_PNG_DLG_CLOSE       PNG                     "..\\..\\common\\res\\png\\dialog\\dlg_close.png"
+IDB_PNG_DLG_MAX         PNG                     "..\\..\\common\\res\\png\\dialog\\dlg_max.png"
+IDB_PNG_DLG_MIN         PNG                     "..\\..\\common\\res\\png\\dialog\\dlg_min.png"
+IDB_PNG_DLG_RESTORE     PNG                     "..\\..\\common\\res\\png\\dialog\\dlg_restore.png"
+IDB_PNG_DLG_SELF        PNG                     "..\\..\\common\\res\\png\\dialog\\dlg_self.png"
+IDB_PNG_BUTTON_COMMON4_22 PNG                     "..\\..\\common\\res\\png\\button\\Button4-22.png"
+IDB_PNG_BUTTON_COMMON2_20 PNG                     "..\\..\\common\\res\\png\\button\\Button2-20.png"
+IDB_PNG_BUTTON_COMMON3_20 PNG                     "..\\..\\common\\res\\png\\button\\Button3-20.png"
+IDB_PNG_DLG_FRAME       PNG                     "..\\..\\common\\res\\png\\dialog\\窗体框架.png"
+IDB_PNG_EDIT_COMMON2_24 PNG                     "..\\..\\common\\res\\png\\edit\\输入框24.png"
+IDB_PNG_EDIT_COMMON2_26 PNG                     "..\\..\\common\\res\\png\\edit\\输入框26.png"
+IDB_PNG_CHECKBOX_COMMON4 PNG                     "..\\..\\common\\res\\png\\button\\多选.png"
+IDB_PNG_COMMON_CTRL_FRAME PNG                     "..\\..\\common\\res\\png\\common\\通用框背景.png"
+IDB_PNG_LISTCTRL_BG     PNG                     "..\\..\\common\\res\\png\\listctrl\\表格背景.png"
+IDB_PNG_COMMON_TOPMASK6 PNG                     "..\\..\\common\\res\\png\\common\\6像索顶部蒙板.png"
+IDB_PNG_COMMON_BOTTOMMASK27 PNG                     "..\\..\\common\\res\\png\\common\\27像素底部蒙板.png"
+IDB_PNG_COMMON_SELECTANDFOCUS2_21 PNG                     "..\\..\\common\\res\\png\\common\\选中高亮2-21.png"
+IDB_PNG_COMMON_ICON_SKIN PNG                     "..\\..\\common\\res\\png\\common\\皮肤.png"
+IDB_PNG_COMMON_ICON_MESSAGE PNG                     "..\\..\\common\\res\\png\\common\\消息.png"
+IDB_PNG_TAB_HEADER3_32  PNG                     "..\\..\\common\\res\\png\\tab\\左导航Button.png"
+IDB_PNG_COMMON_ICON_BUSINESS PNG                     "..\\..\\common\\res\\png\\common\\业务.png"
+IDB_PNG_TREECTRL_EXPAND1 PNG                     "..\\..\\common\\res\\png\\treectrl\\竖型分组1.png"
+IDB_PNG_TREECTRL_EXPAND2 PNG                     "..\\..\\common\\res\\png\\treectrl\\竖型分组2.png"
+IDB_PNG_COMMON_ICON_NOTIFY PNG                     "..\\..\\common\\res\\png\\common\\消息通知.png"
+IDB_PNG_COMMON_ICON_ADD PNG                     "..\\..\\common\\res\\png\\common\\增加.png"
+IDB_PNG_COMMON_ICON_MODIIFY PNG                     "..\\..\\common\\res\\png\\common\\修改密码.png"
+IDB_PNG_COMBOBOXCTRL_BUTTON PNG                     "..\\..\\common\\res\\png\\combobox\\下拉框按钮.png"
+IDB_PNG_COMBOBOXCTRL_BUTTON3_26 PNG                     "..\\..\\common\\res\\png\\combobox\\下拉框按钮26.png"
+IDB_PNG_COMMON_ICON_DELETE2_16 PNG                     "..\\..\\common\\res\\png\\common\\删除2-16.png"
+IDB_PNG_COMMON_HSCROLLBAR4_14 PNG                     "..\\..\\common\\res\\png\\common\\水平滚动条.png"
+IDB_PNG_COMMON_SCROLLBAR4_10 PNG                     "..\\..\\common\\res\\png\\common\\滚动条10.png"
+IDB_PNG_COMMON_SCROLLBAR4_14 PNG                     "..\\..\\common\\res\\png\\common\\滚动条.png"
+IDB_PNG_COMMON_HSCROLLBAR4_10 PNG                     "..\\..\\common\\res\\png\\common\\水平滚动条10.png"
+IDB_PNG_RADIOBOX_COMMON4 PNG                     "..\\..\\common\\res\\png\\button\\单选.png"
+IDB_PNG_COMMON_ICON_DELETE2_15 PNG                     "..\\..\\common\\res\\png\\common\\删除2-15.png"
+IDB_PNG_BUTTON_ICON_KEYBOARD PNG                     "..\\..\\common\\res\\png\\button\\软键盘.png"
+IDB_PNG_BUTTON_ICON_MESSAGE PNG                     "..\\..\\common\\res\\png\\button\\信息.png"
+IDB_PNG_BUTTON_ICON_CALC PNG                     "..\\..\\common\\res\\png\\button\\计算器.png"
+IDB_PNG_BUTTON_ICON_TRAIN PNG                     "..\\..\\common\\res\\png\\button\\火车.png"
+IDB_PNG_COMMON_ICON_HELP PNG                     "..\\..\\common\\res\\png\\TS\\帮助.png"
+IDB_PNG_COMMON_ICON_NETSETTING PNG                     "..\\..\\common\\res\\png\\TS\\网络设置.png"
+IDB_PNG_COMMON_DIALOG_BALLOON PNG                     "..\\..\\common\\res\\png\\common\\提醒1.png"
+IDB_PNG_COMMON_ICON_AD  PNG                     "..\\..\\common\\res\\png\\common\\广而告知.png"
+IDB_PNG_COMMON_HEADFRAME PNG                     "..\\..\\common\\res\\png\\common\\头像外框.png"
+IDB_PNG_BUTTON_SKIN     PNG                     "..\\..\\common\\res\\png\\common\\皮肤按钮.png"
+IDB_PNG_COMMON_BUTTONDELETE PNG                     "..\\..\\common\\res\\png\\common\\按钮删除.png"
+IDB_PNG_COMMON_NOSKIN   PNG                     "..\\..\\common\\res\\png\\common\\出错图片.png"
+IDB_PNG_TAB_HEADER      PNG                     "..\\..\\common\\res\\png\\tab\\多页面.png"
+IDB_PNG_COMMON_TOPMASK23 PNG                     "..\\..\\common\\res\\png\\common\\23像索顶部蒙板.png"
+IDB_PNG_COMMON_MESSAGEHINT PNG                     "..\\..\\common\\res\\png\\common\\消息提示.png"
+IDB_PNG_COMMON_MENUBG   PNG                     "..\\..\\common\\res\\png\\common\\菜单背景.png"
+IDB_PNG_MENUITEM_SYSCONFIG PNG                     "..\\..\\common\\res\\png\\common\\设置.png"
+IDB_PNG_MENUITEM_LOCK   PNG                     "..\\..\\common\\res\\png\\common\\锁定.png"
+IDB_PNG_MENUITEM_SYNDATA PNG                     "..\\..\\common\\res\\png\\common\\资料同步.png"
+IDB_PNG_MENUITEM_EXIT   PNG                     "..\\..\\common\\res\\png\\common\\退出.png"
+IDB_PNG_MENUITEM_UPDATE PNG                     "..\\..\\common\\res\\png\\common\\系统升级.png"
+IDB_PNG_MENUITEM_ADDMONEY PNG                     "..\\..\\common\\res\\png\\common\\钱.png"
+IDB_PNG_MENUITEM_LOGOS  PNG                     "..\\..\\common\\res\\png\\common\\软件小.png"
+IDB_PNG_COMMON_LABEL    PNG                     "..\\..\\common\\res\\png\\common\\标签背景.png"
+IDB_PNG_COMMON_ICON_MODIPASS PNG                     "..\\..\\common\\res\\png\\common\\修改密码.png"
+IDB_PNG_COMMON_ICON_MAINPANEL PNG                     "..\\..\\common\\res\\png\\common\\主面板.png"
+IDB_PNG_COMMON_BUTTONUNLOCK4 PNG                     "..\\..\\common\\res\\png\\common\\解锁.png"
+IDB_PNG_COMMON_LOCKICON PNG                     "..\\..\\common\\res\\png\\common\\锁定图标.png"
+IDB_PNG_COMMON_WEATHER  PNG                     "..\\..\\common\\res\\png\\common\\天气预报.png"
+IDB_PNG_COMMON_DRAWERHEADER PNG                     "..\\..\\common\\res\\png\\common\\上下导航.png"
+IDB_PNG_COMMON_SEARCH   PNG                     "..\\..\\common\\res\\png\\common\\搜索.png"
+IDB_PNG_COMMON_PRINT    PNG                     "..\\..\\common\\res\\png\\common\\打印机.png"
+IDB_PNG_COMMON_STATETEAMSTATE4_16 PNG                     "..\\..\\common\\res\\png\\common\\团态.png"
+IDB_PNG_COMMON_STATELASTCHECK3_16 PNG                     "..\\..\\common\\res\\png\\common\\总审.png"
+IDB_PNG_COMMON_STATEDEPCHECK3_16 PNG                     "..\\..\\common\\res\\png\\common\\部审.png"
+IDB_PNG_COMMON_STATEMONEYCHECK3_16 PNG                     "..\\..\\common\\res\\png\\common\\财审.png"
+IDB_PNG_COMMON_HINTDIALOG_BG PNG                     "..\\..\\common\\res\\png\\common\\小窗口.png"
+IDB_PNG_COMMON_TRAVELAGENCY1_16 PNG                     "..\\..\\common\\res\\png\\TS\\旅行社.png"
+IDB_PNG_COMMON_WORD1_16 PNG                     "..\\..\\common\\res\\png\\TS\\word.png"
+IDB_PNG_COMMON_GUESTLIST1_16 PNG                     "..\\..\\common\\res\\png\\TS\\客人名单.png"
+IDB_PNG_COMMON_PREVIEW1_16 PNG                     "..\\..\\common\\res\\png\\TS\\预览.png"
+IDB_PNG_CALENDAR_BUTTONBG3_17_16 PNG                     "..\\..\\common\\res\\png\\Calendar\\Button16.png"
+IDB_PNG_BUTTON_DTAETIME_DEL3_17_16 PNG                     "..\\..\\common\\res\\png\\Calendar\\sanchu.png"
+IDB_PNG_BUTTON_DTAETIME_DOWN3_17_16 PNG                     "..\\..\\common\\res\\png\\Calendar\\xiaolao.png"
+IDB_PNG_CALENDAR_BG     PNG                     "..\\..\\common\\res\\png\\Calendar\\日历背景.png"
+IDB_PNG_CALENDAR_ARR2   PNG                     "..\\..\\common\\res\\png\\Calendar\\左右标.png"
+IDB_PNG_COMMON_NEW1_16  PNG                     "..\\..\\common\\res\\png\\common\\新建.png"
+IDB_PNG_COMMON_FAX1_16  PNG                     "..\\..\\common\\res\\png\\common\\fax.png"
+IDB_PNG_COMMON_SAVE1_16 PNG                     "..\\..\\common\\res\\png\\common\\Save.png"
+IDB_PNG_COMMON_SAVEAS1_16 PNG                     "..\\..\\common\\res\\png\\common\\SaveAs.png"
+IDB_PNG_SCALESPLIDWND_IMAGELO3_11_205 PNG                     "..\\..\\common\\res\\png\\common\\左开.png"
+IDB_PNG_SCALESPLIDWND_IMAGERC3_11_205 PNG                     "..\\..\\common\\res\\png\\common\\右关.png"
+IDB_PNG_SCALESPLIDWND_IMAGERO3_11_205 PNG                     "..\\..\\common\\res\\png\\common\\右开.png"
+IDB_PNG_SCALESPLIDWND_IMAGELC3_11_205 PNG                     "..\\..\\common\\res\\png\\common\\左关.png"
+IDB_PNG_TABEX_LEFTARR3_13 PNG                     "..\\..\\common\\res\\png\\common\\左.png"
+IDB_PNG_TABEX_RIGHTARR3_13 PNG                     "..\\..\\common\\res\\png\\common\\右.png"
+IDB_PNG_DLG_LOGINBG     PNG                     "..\\..\\common\\res\\png\\登录背景.png"
+IDB_PNG_COMMON_ICONDELETE3_15 PNG                     "png\\common\\小关闭.png"
+IDB_PNG_COMMON_PROGRESSBG PNG                     "..\\..\\common\\res\\png\\common\\进度条.png"
+IDB_PNG_COMMON_FOCUS    PNG                     "png\\button\\焦点框.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// JPG
+//
+
+IDB_JPG_DLG_BG          JPG                     "..\\..\\common\\res\\jpg\\dlg_bg.jpg"
+//IDR_JPG_AD              JPG                     "..\\..\\common\\res\\jpg\\ts\\广告.jpg"
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
