@@ -19,7 +19,14 @@ public:
 	CLKFontMgr(void);
 	~CLKFontMgr(void);
 	static CFont *GetMSYH13px();
-	static CFont *GetMSYH14px();
+	// Î¢ÈíÑÅºÚ12°õ
+	static CFont *GetMSYHPoint12();
+	// Î¢ÈíÑÅºÚ13°õ
+	static CFont *GetMSYHPoint13();
+	// Î¢ÈíÑÅºÚ14°õ
+	static CFont *GetMSYHPoint14();
+	// Î¢ÈíÑÅºÚ72°õ
+	static CFont *GetMSYHPoint72();
 	static CFont *GetMSS80();
 	static CFont *GetST90();
 	static CFont *GetSTB90();
@@ -39,8 +46,14 @@ public:
 private:
 	// Î¢ÈíÑÅºÚ13px
 	CFont		*m_pFontMSYH13px;
-	// Î¢ÈíÑÅºÚ14px
-	CFont		*m_pFontMSYH14px;
+	// Î¢ÈíÑÅºÚ12°õ
+	CFont		*m_pFontMSYHPoint12;
+	// Î¢ÈíÑÅºÚ13°õ
+	CFont		*m_pFontMSYHPoint13;
+	// Î¢ÈíÑÅºÚ14°õ
+	CFont		*m_pFontMSYHPoint14;
+	// Î¢ÈíÑÅºÚ72°õ
+	CFont		*m_pFontMSYHPoint72;
 	// ËÎÌå60
 	CFont		*m_pFontMSS80;
 	// ËÎÌå90

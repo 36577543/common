@@ -164,11 +164,14 @@ public:
         double n = (double)(nFinishAlpha - nStartAlpha) / (nHeight > 1 ? nHeight - 1 : 1);
 	    for(int i = 0; i < nHeight; i++)
 	    {
-		    unsigned char* pucColor = reinterpret_cast<unsigned char *>(GetPixelAddress(0, i));
-		    pucColor[0] = 255;
-		    pucColor[1] = 255;
-		    pucColor[2] = 255;
-		    pucColor[3] = nStartAlpha + (int)(n * i);
+			for (int j = 0; j < nWidth; j++)
+			{
+				unsigned char* pucColor = reinterpret_cast<unsigned char *>(GetPixelAddress(j, i));
+				pucColor[0] = 255;
+				pucColor[1] = 255;
+				pucColor[2] = 255;
+				pucColor[3] = nStartAlpha + (int)(n * i);
+			}
 	    }
 	    // 设置透明通道
         SetAlphaChannel();
@@ -428,7 +431,11 @@ inline void CLKImage::DrawText(CDC &memDC, CString strText, CRect rtText, UINT u
 // 在图片上画文本
 inline bool CLKImage::DrawText(CString strText, CRect rtText, CFont *pFont, UINT uFormat, COLORREF crText)
 {
-	CWnd *pWnd = CWnd::FromHandle(GetDesktopWindow());
+	CWnd *pWnd = ::AfxGetApp()->GetMainWnd();
+	if (!pWnd)
+	{
+		pWnd = CWnd::FromHandle(GetDesktopWindow());
+	}
 	if(pWnd && pWnd->GetSafeHwnd())
 	{
 		CDC *pDC = pWnd->GetWindowDC();

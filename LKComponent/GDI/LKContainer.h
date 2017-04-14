@@ -46,9 +46,15 @@ public:
 	// 控件子项的间隔
 	int GetItemSplit(){ return m_nItemSplit; }
 	// 控件子项的宽
+	void SetItemWidth(int nItemWidth){ m_nItemWidth = nItemWidth; }
+	// 控件子项的高
+	void SetItemHeight(int nItemHeight){ m_nItemHeight = nItemHeight; }
+	// 控件子项的宽
 	int GetItemWidth(){ return m_nItemWidth; }
 	// 控件子项的高
-	int GetItemHeight(){ return m_nItemWidth; }
+	int GetItemHeight(){ return m_nItemHeight; }
+	// 控件子项文字区域的高度
+	void SetItemTextHeight(int nHeight){ m_nItemTextHeight = nHeight; }
 
 protected:
 	DECLARE_MESSAGE_MAP()
@@ -107,6 +113,8 @@ private:
 	int m_nItemWidth = 468; //138;
 	// 控件子项的高
 	int m_nItemHeight = 243;// 203;
+	// 控件子项文字区域的高度
+	int m_nItemTextHeight = 20;
 	// 第一个科技的项
 	CLKContainerItem  *m_pVisibleItemBeginItem = 0;
 	// 绘制子项

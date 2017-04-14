@@ -900,23 +900,26 @@ void CLKDialog::DrawNClientFrame()
 		{
 			delete m_pMemBmp;
 		}
-		m_pMemBmp = new CLKImage(m_rtWnd.Width(), m_rtWnd.Height());
-		if(m_pBGBmp)
+		if (!m_rtWnd.IsRectEmpty())
 		{
-			//if (!m_rtMaxWnd.IsRectEmpty() && m_arrImage[LKGDIBASEDIALOG_IMAGEINDEX_MAX] != 0)
-			//{
-			//	// 窗体可变大小
-			//	m_pBGBmp->StretchBilinear(m_pMemBmp, m_pMemBmp->GetWidth(), m_pMemBmp->GetHeight(), m_pBGBmp->GetWidth(), m_pBGBmp->GetHeight());
-			//}
-			//else
-			//{
-				m_pBGBmp->DrawToImage(m_pMemBmp);
-			//}
+			m_pMemBmp = new CLKImage(m_rtWnd.Width(), m_rtWnd.Height());
+			if(m_pBGBmp)
+			{
+				//if (!m_rtMaxWnd.IsRectEmpty() && m_arrImage[LKGDIBASEDIALOG_IMAGEINDEX_MAX] != 0)
+				//{
+				//	// 窗体可变大小
+				//	m_pBGBmp->StretchBilinear(m_pMemBmp, m_pMemBmp->GetWidth(), m_pMemBmp->GetHeight(), m_pBGBmp->GetWidth(), m_pBGBmp->GetHeight());
+				//}
+				//else
+				//{
+					m_pBGBmp->DrawToImage(m_pMemBmp);
+				//}
+			}
+			// 画边框
+			DrawFrameEdge();
+			// 初始化窗口前景图片
+			OnInitMemImg();
 		}
-		// 画边框
-		DrawFrameEdge();
-		// 初始化窗口前景图片
-		OnInitMemImg();
 	}/**/
 }
 
@@ -1339,7 +1342,7 @@ void CLKDialog::DrawKillFocusFrame(CDC *pDC)
 {
 	// 画蒙板
 	CLKImage img(1, 26, 125, 0);
-    if(img.IsValid())
+	if (img.IsValid() && m_rtWnd.Width())
     {
         CRect rtDest(0, 0, m_rtWnd.Width(), 26);
         img.DrawToDC(pDC, rtDest, 0);

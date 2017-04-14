@@ -23,7 +23,6 @@
 
 //#include "stdafx.h"
 #include "DynDialogEx.h"
-#include "LKImageMgr.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -665,10 +664,11 @@ bool CDynDialogEx::DoUpdateDummyDialog()
 
 void CDynDialogEx::OnDraw(CDC *pDC, CRect &rtWnd)
 {
-	
-	//CLKImage *pImg = CLKImageMgr::GetImageS(LKIMAGEBUTTONINDEX_COMMON_ICONMESSAGE);
-	//CLKImage *pImg = CLKImageMgr::GetImageS(LKIMAGEBUTTONINDEX_COMMON_SKINFRAME);
-	CLKImage *pImg = CLKImageMgr::GetImageS(LKIMAGELISTINDEX_COMMON_FOCUS);
+	CLKImage *pImg = m_pImg;
+	if (!pImg)
+	{
+		pImg = CLKImageMgr::GetImageS(LKIMAGELISTINDEX_COMMON_FOCUS);
+	}
 	if (pImg)
 	{
 		AngleOffset angleOffset(0);

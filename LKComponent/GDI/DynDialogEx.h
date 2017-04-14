@@ -8,6 +8,7 @@
 //
 
 #include "DynDialogItemEx.h"
+#include "LKImageMgr.h"
 
 // Control styles
 #define	STYLE_EDIT							(WS_VISIBLE | WS_CHILD | WS_TABSTOP | SS_LEFT)
@@ -110,9 +111,11 @@ public:
 // Overrides
 	// ClassWizard generated virtual function overrides
 	//{{AFX_VIRTUAL(CDynDialogEx)
-	public:
+public:
 	virtual int DoModal();
-	protected:
+	// …Ë÷√Õº∆¨
+	void SetImage(CLKImage *pImg){ m_pImg = pImg; }
+protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
 	virtual void OnCancel();
 	virtual BOOL OnCommand(WPARAM wParam, LPARAM lParam);
@@ -120,7 +123,6 @@ public:
 	//}}AFX_VIRTUAL
 	virtual void OnHelp();										// To be overridden..
 	bool DoUpdateDummyDialog();
-
 protected:
 	CWnd *m_pParentWnd;
 	CString m_strCaption;
@@ -161,6 +163,7 @@ private:
 	int m_nWidth = 468;// 138;
 	int m_nHeight = 223;// 183;
 	virtual LRESULT WindowProc(UINT message, WPARAM wParam, LPARAM lParam);
+	CLKImage *m_pImg = 0;
 public:
 	virtual BOOL PreTranslateMessage(MSG* pMsg);
 };

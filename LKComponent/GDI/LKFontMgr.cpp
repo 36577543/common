@@ -3,8 +3,11 @@
 CLKFontMgr *CSingle<CLKFontMgr>::m_pInstance = 0;
 
 CLKFontMgr::CLKFontMgr(void)
-: m_pFontMSYH14px(0)
-, m_pFontMSYH13px(0)
+: m_pFontMSYH13px(0)
+, m_pFontMSYHPoint12(0)
+, m_pFontMSYHPoint13(0)
+, m_pFontMSYHPoint14(0)
+, m_pFontMSYHPoint72(0)
 , m_pFontST90(0)
 , m_pFontSTB90(0)
 , m_pFontMSS80(0)
@@ -19,17 +22,35 @@ CLKFontMgr::CLKFontMgr(void)
 
 CLKFontMgr::~CLKFontMgr(void)
 {
-	if (m_pFontMSYH14px)
-	{
-		m_pFontMSYH14px->DeleteObject();
-		delete m_pFontMSYH14px;
-		m_pFontMSYH14px = 0;
-	}
 	if (m_pFontMSYH13px)
 	{
 		m_pFontMSYH13px->DeleteObject();
 		delete m_pFontMSYH13px;
 		m_pFontMSYH13px = 0;
+	}
+	if (m_pFontMSYHPoint12)
+	{
+		m_pFontMSYHPoint12->DeleteObject();
+		delete m_pFontMSYHPoint12;
+		m_pFontMSYHPoint12 = 0;
+	}
+	if (m_pFontMSYHPoint13)
+	{
+		m_pFontMSYHPoint13->DeleteObject();
+		delete m_pFontMSYHPoint13;
+		m_pFontMSYHPoint13 = 0;
+	}
+	if (m_pFontMSYHPoint14)
+	{
+		m_pFontMSYHPoint14->DeleteObject();
+		delete m_pFontMSYHPoint14;
+		m_pFontMSYHPoint14 = 0;
+	}
+	if (m_pFontMSYHPoint72)
+	{
+		m_pFontMSYHPoint72->DeleteObject();
+		delete m_pFontMSYHPoint72;
+		m_pFontMSYHPoint72 = 0;
 	}
 	if (m_pFontMSS80)
 	{
@@ -119,33 +140,66 @@ CFont *CLKFontMgr::GetMSYH13px()
 	return 0;
 }
 
-CFont *CLKFontMgr::GetMSYH14px()
+// Î¢ÈíÑÅºÚ12°õ
+CFont *CLKFontMgr::GetMSYHPoint12()
 {
-
 	CLKFontMgr *p = CLKFontMgr::GetInstance();
-	if (!p->m_pFontMSYH14px)
+	if (!p->m_pFontMSYHPoint12)
 	{
-		p->m_pFontMSYH14px = new CFont;
-		//p->m_pFontMSYH13px->CreatePointFont(13, L"Î¢ÈíÑÅºÚ", NULL);
-		p->m_pFontMSYH14px->CreateFont(22, //×ÖÌåµÄ¸ß¶È¡£
-			0, //×ÖÌåµÄ¿í¶È¡£
-			0, //ÎÄ±¾ÐÐµÄÇãÐ±½Ç¶È¡£
-			0, //×Ö·û»ùÏßµÄÇãÐ±½Ç¶È¡£
-			FW_NORMAL, //×Ö·ûµÄ´ÖÏ¸¡£
-			FALSE, //×ÖÌåÊÇ·ñÎªÐ±Ìå¡£
-			FALSE, //×ÖÌåÊÇ·ñ´øÏÂ»®Ïß¡£
-			FALSE, //×ÖÌåÊÇ·ñ´øÉ¾³ýÏß¡£
-			DEFAULT_CHARSET, //×ÖÌåµÄ×Ö·û¼¯¡£
-			OUT_DEFAULT_PRECIS, //×Ö·ûµÄÊä³ö¾«¶È¡£
-			CLIP_DEFAULT_PRECIS, //×Ö·û²Ã¼ô¾«¶È¡£
-			PROOF_QUALITY, //×ÖÌåµÄÊä³öÖÊÁ¿¡£
-			DEFAULT_PITCH | FF_SWISS, //×Ö·û¼ä¾à£¨µÍÁ½Î»£©£¬×ÖÌå×å£¨¸ßËÄÎ»£©¡£
-			_T("Î¢ÈíÑÅºÚ")); //×ÖÌåÃû³Æ¡£ 	
-
+		p->m_pFontMSYHPoint12 = new CFont;
+		p->m_pFontMSYHPoint12->CreatePointFont(120, _T("Î¢ÈíÑÅºÚ"));
 	}
-	if (p && p->m_pFontMSYH14px->GetSafeHandle())
+	if (p && p->m_pFontMSYHPoint12->GetSafeHandle())
 	{
-		return p->m_pFontMSYH14px;
+		return p->m_pFontMSYHPoint12;
+	}
+	return 0;
+}
+
+// Î¢ÈíÑÅºÚ13°õ
+CFont *CLKFontMgr::GetMSYHPoint13()
+{
+	CLKFontMgr *p = CLKFontMgr::GetInstance();
+	if (!p->m_pFontMSYHPoint13)
+	{
+		p->m_pFontMSYHPoint13 = new CFont;
+		p->m_pFontMSYHPoint13->CreatePointFont(130, _T("Î¢ÈíÑÅºÚ"));
+	}
+	if (p && p->m_pFontMSYHPoint13->GetSafeHandle())
+	{
+		return p->m_pFontMSYHPoint13;
+	}
+	return 0;
+}
+
+// Î¢ÈíÑÅºÚ14°õ
+CFont *CLKFontMgr::GetMSYHPoint14()
+{
+	CLKFontMgr *p = CLKFontMgr::GetInstance();
+	if (!p->m_pFontMSYHPoint14)
+	{
+		p->m_pFontMSYHPoint14 = new CFont;
+		p->m_pFontMSYHPoint14->CreatePointFont(140, _T("Î¢ÈíÑÅºÚ"));
+	}
+	if (p && p->m_pFontMSYHPoint14->GetSafeHandle())
+	{
+		return p->m_pFontMSYHPoint14;
+	}
+	return 0;
+}
+
+// Î¢ÈíÑÅºÚ72°õ
+CFont *CLKFontMgr::GetMSYHPoint72()
+{
+	CLKFontMgr *p = CLKFontMgr::GetInstance();
+	if (!p->m_pFontMSYHPoint72)
+	{
+		p->m_pFontMSYHPoint72 = new CFont;
+		p->m_pFontMSYHPoint72->CreatePointFont(720, _T("Î¢ÈíÑÅºÚ"));
+	}
+	if (p && p->m_pFontMSYHPoint72->GetSafeHandle())
+	{
+		return p->m_pFontMSYHPoint72;
 	}
 	return 0;
 }

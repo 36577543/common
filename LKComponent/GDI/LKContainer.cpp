@@ -349,7 +349,7 @@ void CLKContainer::DrawItem(CDC *pDC, PLKContainerItem pItem, CRect rtCtrl)
 		int nWidth = pItem->pImg->GetWidth() > m_nItemWidth - 4 ? m_nItemWidth - 4 : pItem->pImg->GetWidth();
 		int nHeight = pItem->pImg->GetHeight() > m_nItemHeight - 4 ? m_nItemHeight - 4 : pItem->pImg->GetHeight();
 		int nLeft = rtCtrl.left + (rtCtrl.Width() - nWidth) / 2;
-		int nTop = rtCtrl.top + (rtCtrl.Height() - nHeight - 20) / 2;
+		int nTop = rtCtrl.top + (rtCtrl.Height() - nHeight - m_nItemTextHeight) / 2;
 		CRect r(nLeft, nTop, nLeft + nWidth, nTop + nHeight);
 
 		pItem->pImg->DrawToDC(pDC, r, 0);
@@ -368,7 +368,7 @@ void CLKContainer::DrawItem(CDC *pDC, PLKContainerItem pItem, CRect rtCtrl)
 	if (!pItem->strText.IsEmpty())
 	{
 		rtCtrl.bottom -= 2;
-		rtCtrl.top = rtCtrl.bottom - 20;
+		rtCtrl.top = rtCtrl.bottom - m_nItemTextHeight;
 		rtCtrl.left += 2;
 		rtCtrl.right -= 2;
 		//rtCtrl.top += m_nItemWidth;
